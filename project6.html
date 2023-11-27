@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="import 'package:day_night_switch/day_night_switch.dart'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            transition: all linear 1s;
+        }
+        #main{
+            margin-left: 40%;
+            margin-top: 20%;
+        }
+        h1{
+            transition: all linear 1s;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+            margin-right: 10px;
+            transition: all linear 0.5s     ;
+        }
+        #button:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 5px 5px 5px white;
+        }
+        #button2:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 5px 5px 5px black;
+        }
+    </style>
+</head>
+<body id="body">
+   <div id="main">
+    <h1 id="head">Wow!</h1>
+    <button onclick="dark() " id="button" style="margin-left: -30px;border: none;">Dark Mode</button>
+    <button onclick="abc() " id="button2"  style="border: none;">Light Mode</button>
+    <script>
+      
+        function dark(){
+            var a = document.getElementById("body");
+            var b =document.getElementById("head");
+            body.style.background = "black";
+            head.style.color = "white"
+        }
+        function abc(){
+            var a = document.getElementById("body");
+            var b =document.getElementById("head");
+            body.style.background = "white";
+            head.style.color = "black"
+        }
+    </script>
+   </div>
+</body>
+</html>
